@@ -1,0 +1,2 @@
+#!/bin/sh
+cat ~/.surf/bookmarks.txt | dmenu -l 20 | xargs -I {} tabbed -r 2 surf -e x "{}" & disown
